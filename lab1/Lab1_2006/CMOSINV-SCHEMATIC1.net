@@ -1,0 +1,20 @@
+* source CMOSINV
+C_C2         0 N03374  0.5pf  
+M_M2         N00472 N00546 N00427 N00472 MbreakpD  
++ L=5U  
++ W=30U         
+V_V1         N00546 0  
++PULSE 0 2.5V 1ns 1ns 1ns 200ns 600ns
+V_V3         N03426 0  
++PULSE 0 2.5V 1ns 1ns 1ns 200ns 600ns
+V_V2         N00472 0 2.5Vdc
+M_M1         N00427 N00546 0 0 MbreaknD  
++ L=5U  
++ W=30U         
+M_M3         N00472 N03426 N03374 0 MbreaknD  
++ L=5u  
++ W=30u         
+M_M4         N03374 N03426 0 N00472 MbreakpD  
++ L=5U  
++ W=30U         
+C_C1         0 N00427  0.5pf  

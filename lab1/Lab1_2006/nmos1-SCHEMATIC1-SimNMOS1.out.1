@@ -1,0 +1,46 @@
+
+**** 12/21/04 17:19:21 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimNMOS1"  [ C:\LAB350\NewPspice\Lab1_2005\nmos1-schematic1-simnmos1.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nmos1-schematic1-simnmos1.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\nmos1.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1200ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\nmos1-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING nmos1-SCHEMATIC1.net ****
+* source NMOS1
+V_V1         N00546 0  
++PULSE 0 5 1ns 1ns 1ns 100ns 600ns
+V_V2         N00325 0 5Vdc
+M_M1         N00361 N00546 0 0 MbreaknD  
++ L=.01  
+----$
+ERROR -- Length must be less than 0.01 meter
++ W=15         
+C_C1         N00361 N00325  0.1PF  
+R_R1         N00361 N00325  100k  
+
+**** RESUMING nmos1-schematic1-simnmos1.sim.cir ****
+.END
+

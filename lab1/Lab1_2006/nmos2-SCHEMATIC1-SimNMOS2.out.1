@@ -1,0 +1,44 @@
+
+**** 12/21/04 12:05:44 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimNMOS2"  [ C:\LAB350\NewPspice\Lab1_2005\nmos2-schematic1-simnmos2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "nmos2-schematic1-simnmos2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\nmos2.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1200ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\nmos2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING nmos2-SCHEMATIC1.net ****
+* source NMOS2
+V_V2         N00427 0 5Vdc
+M_M1         N00427 N00546 N00325 0 MbreaknD           
+C_C1         0 N00325  0.1PF  
+R_R1         0 N00325  0  
+-----------------------$
+ERROR -- Value may not be 0
+V_V1         N00546 0  
++PULSE 0 5 1ns 1ns 1ns 100ns 600ns
+
+**** RESUMING nmos2-schematic1-simnmos2.sim.cir ****
+.END
+

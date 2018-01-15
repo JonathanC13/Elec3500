@@ -1,0 +1,18 @@
+** Profile: "SCHEMATIC1-SimINV"  [ P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv-schematic1-siminv.sim ] 
+
+** Creating circuit file "cmosinv-schematic1-siminv.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\cmosinv.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1200ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\cmosinv-SCHEMATIC1.net" 
+
+
+.END

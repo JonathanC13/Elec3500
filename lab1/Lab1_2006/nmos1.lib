@@ -1,0 +1,40 @@
+* PSpice Model Editor - Version 9.2
+
+*$
+.model MbreaknD NMOS (                                LEVEL   = 7
+* .model MbreaknD NMOS VTO=-4.0
++TNOM=27  TOX=5.6e-9  XJ=1e-7  NCH     = 2.3549E17      
++VTH0    = 0.4453633  dev/gauss 4% lot/gauss 19%
++K1      = 0.3825557      K2      = 0.0194091      K3      = 1E-3
++K3B     = 2.3227199      W0      = 1.076594E-6    NLX     = 2.963077E-9
++DVT0W   = 0              DVT1W   = 0              DVT2W   = 0
++DVT0    = -0.2586594     DVT1    = 0.0595507      DVT2    = 0.3001966
++U0      = 401.5730421    UA      = -2.37281E-12   UB      = 1.328194E-18
++UC      = 3.018199E-11   VSAT    = 1.27306E5      A0      = 1.1907734
++AGS     = 0.2938538      B0      = 4.085982E-8    B1      = -1E-7
++KETA    = 6.230369E-3    A1      = 0              A2      = 1
++RDSW    = 261.946116     PRWG    = 0.294083       PRWB    = -0.1302751
++WR      = 1              WINT    = 1.905553E-8    LINT    = 3.444679E-9
+*+XL      = 3E-8        
++DL      = 3e-8                         DWG     = 1.0885E-9
++DWB     = 7.228319E-9    VOFF    = -0.1208692     NFACTOR = 0.521562
++CIT     = 0              CDSC    = 9.332529E-4    CDSCD   = 4.885168E-6
++CDSCB   = 8.859023E-6    ETA0    = 2.783816E-3    ETAB    = 8.695671E-4
++DSUB    = 0.0355831      PCLM    = 1.3913664      PDIBLC1 = 0.7378656
++PDIBLC2 = 9.849566E-3    PDIBLCB = -0.0790041     DROUT   = 0.6521457
++PSCBE1  = 8.085934E9     PSCBE2  = 7.947293E-9    PVAG    = 1.6387824
++DELTA   = 0.01           MOBMOD  = 1              PRT     = 0
++UTE     = -1.5           KT1     = -0.11          KT1L    = 0
++KT2     = 0.022          UA1     = 4.31E-9        UB1     = -7.61E-18
++UC1     = -5.6E-11       AT      = 3.3E4          WL      = 0
++WLN     = 1              WW      = -1.22182E-16   WWN     = 1.127
++WWL     = 0              LL      = 0              LLN     = 1
++LW      = 0              LWN     = 1              LWL     = 0
++CAPMOD  = 2              XPART   = 0.4            CGDO    = 5.23E-10
++CGSO    = 5.23E-10       CGBO    = 1E-11          CJ      = 1.746454E-3
++PB      = 0.99           MJ      = 0.4593892      CJSW    = 3.61355E-10
++PBSW    = 0.99           MJSW    = 0.3134889      PVTH0   = -1.524806E-3
++PRDSW   = -30.1085658    PK2     = -2.505753E-4   WKETA   = -4.420085E-3
++LKETA   = -9.94706E-3    LAGS    = -0.10925       )
+*
+*$

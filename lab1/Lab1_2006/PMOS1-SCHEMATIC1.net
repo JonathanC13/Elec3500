@@ -1,0 +1,9 @@
+* source PMOS1
+V_V1         N00546 0  
++PULSE 0 2.5 1ns 200ps 200ps 20ns 60ns
+V_V2         VDD 0 2.5Vdc
+C_C1         0 VOUT  0.1PF  
+R_R1         VOUT VDD  10k  
+M_M2         VOUT N00546 0 VDD MbreakpD  
++ L=1u  
++ W=1u         

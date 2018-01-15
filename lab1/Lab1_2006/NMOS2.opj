@@ -1,0 +1,60 @@
+(ExpressProject "NMOS2"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (Sort User)
+      (File ".\nmos2.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\nmos2.olb")))
+    (NoModify)
+    (File ".\nmos2.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\nmos2-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\nmos2-schematic1-simnmos2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\nmos2-schematic1-simnmos2.sim"
+        (DisplayName "SCHEMATIC1-SimNMOS2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\nmos2.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\nmos2.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (MbreakN4D
+      (FullPartName "MbreakN4D.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\nmos2.dsn")
+      (Path "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\nmos2.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Path "PSpice Resources")
+      (Path "PSpice Resources" "Model Libraries")
+      (Path "PSpice Resources" "Simulation Profiles")
+      (Select "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\nmos2.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -4 -40 4 337 -8 545"))
+      (Tab 0))))

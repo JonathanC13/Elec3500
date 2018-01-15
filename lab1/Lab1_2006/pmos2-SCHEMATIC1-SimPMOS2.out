@@ -1,0 +1,193 @@
+
+**** 09/13/05 19:18:15 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimPMOS2"  [ P:\CourseNotes\ELEC3500\Lab1_2005\pmos2-schematic1-simpmos2.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "pmos2-schematic1-simpmos2.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\pmos2.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 120ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\pmos2-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING pmos2-SCHEMATIC1.net ****
+* source PMOS2
+V_V1         N00546 0  
++PULSE 0 2.5 1ns 200ps 200ps 20ns 60ns
+V_V2         N00427 0 2.5Vdc
+M_M2         N00427 N00546 N00325 N00427 MbreakpD  
++ L=1u  
++ W=1u         
+C_C1         0 N00325  0.1PF  
+R_R1         0 N00325  10k  
+
+**** RESUMING pmos2-schematic1-simpmos2.sim.cir ****
+.END
+
+WARNING -- Mosfet M_M2, model MbreakpD: Pd = 0 is less than W
+WARNING -- Mosfet M_M2, model MbreakpD: Ps = 0 is less than W
+**** 09/13/05 19:18:15 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimPMOS2"  [ P:\CourseNotes\ELEC3500\Lab1_2005\pmos2-schematic1-simpmos2.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakpD        
+               PMOS            
+  T_Measured   27            
+   T_Current   27            
+       LEVEL    7            
+           L  100.000000E-06 
+           W  100.000000E-06 
+          LD   30.000000E-09 
+         VTO    -.602768     
+          KP  369.979700E-06 
+       GAMMA    0            
+      LAMBDA    0            
+          IS    1.000000E-15 
+          JS  100.000000E-06 
+          PB     .988222     
+        PBSW     .856472     
+          CJ    1.887139E-03 
+        CJSW  310.015500E-12 
+          MJ     .468053     
+        MJSW     .342834     
+        CGSO  484.000000E-12 
+        CGDO  484.000000E-12 
+        CGBO   10.000000E-12 
+         TOX    5.600000E-09 
+          XJ  100.000000E-09 
+       UCRIT   10.000000E+03 
+       DELTA     .01         
+      DIOMOD    2            
+          K1     .512567     
+          K2     .03013      
+        LETA    0            
+        WETA    0            
+          U0  193.1741       
+       XPART     .4          
+        VTH0    -.602768     
+          K3    0            
+          W0    1.000000E-06 
+         NLX    4.438213E-09 
+        DVT0    2.587673     
+        DVT1     .502695     
+          UA    3.611358E-09 
+          UB  364.049800E-21 
+          UC  -46.701300E-12 
+        VSAT  197.506400E+03 
+        RDSW  990.0727       
+        VOFF    -.12107      
+     NFACTOR    1.427951     
+        CDSC  806.121100E-06 
+        PCLM    1.053442     
+      PDIBL1   -6.608440E-03 
+      PDIBL2     .02481      
+       DROUT    6.455850E-03 
+      PSCBE1   38.771100E+09 
+      PSCBE2   16.330130E-09 
+          A0     .416062     
+          A1    0            
+          A2    1            
+       NPEAK  415.890000E+15 
+         LDD    0            
+        LITL   40.987800E-09 
+         UC1  -56.000000E-12 
+        PVAG     .032584     
+        KETA     .0239       
+        ETA0     .757629     
+        ETAB    -.076069     
+         K3B    7.705565     
+        DVT2    -.092101     
+        DSUB     .9219       
+       CDSCD   19.059250E-06 
+         AGS     .094323     
+       DVT1W    0            
+       DVT2W    0            
+        PRWG    -.089103     
+        PRWB    -.349395     
+     PDIBLCB     .096059     
+         DWG  -22.297180E-09 
+         DWB   19.193800E-09 
+          B0    2.876274E-06 
+          B1    5.000000E-06 
+        LINT   23.800990E-09 
+        WINT   18.849980E-09 
+         DLC   23.800990E-09 
+         DWC   18.849980E-09 
+          CF   94.146110E-12 
+        NOIA    9.900001E+18 
+        NOIB    2.400000E+03 
+        NOIC    1.400000E-12 
+       LKETA    -.01191      
+       WKETA   -9.458998E-03 
+       PVTH0    3.382690E-03 
+       PRDSW   29.85157      
+         PK2    3.552957E-03 
+         VTM     .025864     
+       PBSWG     .856472     
+       MJSWG     .342834     
+       CJSWG  310.015500E-12 
+
+
+WARNING -- Mosfet M_M2, model MbreakpD: Pd = 0 is less than W
+WARNING -- Mosfet M_M2, model MbreakpD: Ps = 0 is less than W
+**** 09/13/05 19:18:15 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimPMOS2"  [ P:\CourseNotes\ELEC3500\Lab1_2005\pmos2-schematic1-simpmos2.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00325)     .6089 (N00427)    2.5000 (N00546)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V2        -6.089E-05
+
+    TOTAL POWER DISSIPATION   1.52E-04  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME             .22
+

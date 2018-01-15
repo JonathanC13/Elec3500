@@ -1,0 +1,25 @@
+The conversion of the project was successful.
+
+The new directory structure is as follows:
+
+W:/ELEC3500/lab1/Lab1_2006/1
+    NMOS1.opj
+    nmos1.dsn
+    nmos1.dbk
+W:/ELEC3500/lab1/Lab1_2006/1/NMOS1-PSpiceFiles
+    nmos1.lib
+    nmos1.ind
+W:/ELEC3500/lab1/Lab1_2006/1/NMOS1-PSpiceFiles/SCHEMATIC1
+    SCHEMATIC1-default.mrk
+    SimNMOS1.sim
+    SCHEMATIC1.als
+    SCHEMATIC1.net
+W:/ELEC3500/lab1/Lab1_2006/1/NMOS1-PSpiceFiles/SCHEMATIC1/SimNMOS1
+    SimNMOS1.mif
+    SimNMOS1.cir
+    SimNMOS1.out
+    SimNMOS1.1op
+    SimNMOS1.prb
+    SimNMOS1.out.1
+    SimNMOS1.mrk
+    SimNMOS1.dat

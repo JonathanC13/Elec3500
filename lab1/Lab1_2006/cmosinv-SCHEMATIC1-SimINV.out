@@ -1,0 +1,219 @@
+
+**** 01/18/05 16:31:35 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimINV"  [ P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv-schematic1-siminv.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "cmosinv-schematic1-siminv.sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Local Libraries :
+.LIB ".\cmosinv.lib" 
+* From [PSPICE NETLIST] section of C:\Program Files\OrcadLite\PSpice\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1200ns 0 
+.PROBE V(*) I(*) W(*) D(*) NOISE(*) 
+.INC ".\cmosinv-SCHEMATIC1.net" 
+
+
+
+**** INCLUDING cmosinv-SCHEMATIC1.net ****
+* source CMOSINV
+C_C2         0 N03374  0.5pf  
+M_M2         N00472 N00546 N00427 N00472 MbreakpD  
++ L=5U  
++ W=30U         
+V_V1         N00546 0  
++PULSE 0 2.5V 1ns 1ns 1ns 200ns 600ns
+V_V3         N03426 0  
++PULSE 0 2.5V 1ns 1ns 1ns 200ns 600ns
+V_V2         N00472 0 2.5Vdc
+M_M1         N00427 N00546 0 0 MbreaknD  
++ L=5U  
++ W=30U         
+M_M3         N00472 N03426 N03374 0 MbreaknD  
++ L=5u  
++ W=30u         
+M_M4         N03374 N03426 0 N00472 MbreakpD  
++ L=5U  
++ W=30U         
+C_C1         0 N00427  0.5pf  
+
+**** RESUMING cmosinv-schematic1-siminv.sim.cir ****
+.END
+
+WARNING -- Mosfet M_M2, model MbreakpD: Pd = 0 is less than W
+WARNING -- Mosfet M_M2, model MbreakpD: Ps = 0 is less than W
+WARNING -- Mosfet M_M1, model MbreaknD: Pd = 0 is less than W
+WARNING -- Mosfet M_M1, model MbreaknD: Ps = 0 is less than W
+**** 01/18/05 16:31:35 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimINV"  [ P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv-schematic1-siminv.sim ] 
+
+
+ ****     MOSFET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               MbreakpD        MbreaknD        
+               PMOS            NMOS            
+  T_Measured   27              27            
+   T_Current   27              27            
+       LEVEL    7               7            
+           L  100.000000E-06  100.000000E-06 
+           W  100.000000E-06  100.000000E-06 
+          LD   30.000000E-09   30.000000E-09 
+         VTO    -.602768         .445363     
+          KP  369.979700E-06  369.979700E-06 
+       GAMMA    0               0            
+      LAMBDA    0               0            
+          IS    1.000000E-15    1.000000E-15 
+          JS  100.000000E-06  100.000000E-06 
+          PB     .988222         .99         
+        PBSW     .856472         .99         
+          CJ    1.887139E-03    1.746454E-03 
+        CJSW  310.015500E-12  361.355000E-12 
+          MJ     .468053         .459389     
+        MJSW     .342834         .313489     
+        CGSO  484.000000E-12  523.000000E-12 
+        CGDO  484.000000E-12  523.000000E-12 
+        CGBO   10.000000E-12   10.000000E-12 
+         TOX    5.600000E-09    5.600000E-09 
+          XJ  100.000000E-09  100.000000E-09 
+       UCRIT   10.000000E+03   10.000000E+03 
+       DELTA     .01             .01         
+      DIOMOD    2               2            
+          K1     .512567         .382556     
+          K2     .03013          .019409     
+        LETA    0               0            
+        WETA    0               0            
+          U0  193.1741        401.573        
+       XPART     .4              .4          
+        VTH0    -.602768         .445363     
+          K3    0               1.000000E-03 
+          W0    1.000000E-06    1.076594E-06 
+         NLX    4.438213E-09    2.963077E-09 
+        DVT0    2.587673        -.258659     
+        DVT1     .502695         .059551     
+          UA    3.611358E-09   -2.372810E-12 
+          UB  364.049800E-21    1.328194E-18 
+          UC  -46.701300E-12   30.181990E-12 
+        VSAT  197.506400E+03  127.306000E+03 
+        RDSW  990.0727        261.9461       
+        VOFF    -.12107         -.120869     
+     NFACTOR    1.427951         .521562     
+        CDSC  806.121100E-06  933.252900E-06 
+        PCLM    1.053442        1.391366     
+      PDIBL1   -6.608440E-03     .737866     
+      PDIBL2     .02481         9.849566E-03 
+       DROUT    6.455850E-03     .652146     
+      PSCBE1   38.771100E+09    8.085934E+09 
+      PSCBE2   16.330130E-09    7.947293E-09 
+          A0     .416062        1.190773     
+          A1    0               0            
+          A2    1               1            
+       NPEAK  415.890000E+15  235.490000E+15 
+         LDD    0               0            
+        LITL   40.987800E-09   40.987800E-09 
+         UC1  -56.000000E-12  -56.000000E-12 
+        PVAG     .032584        1.638782     
+        KETA     .0239          6.230369E-03 
+        ETA0     .757629        2.783816E-03 
+        ETAB    -.076069      869.567100E-06 
+         K3B    7.705565        2.32272      
+        DVT2    -.092101         .300197     
+       CDSCB                    8.859023E-06 
+        DSUB     .9219           .035583     
+       CDSCD   19.059250E-06    4.885168E-06 
+         AGS     .094323         .293854     
+       DVT1W    0               0            
+       DVT2W    0               0            
+        PRWG    -.089103         .294083     
+        PRWB    -.349395        -.130275     
+     PDIBLCB     .096059        -.079004     
+         DWG  -22.297180E-09    1.088500E-09 
+         DWB   19.193800E-09    7.228319E-09 
+          B0    2.876274E-06   40.859820E-09 
+          B1    5.000000E-06 -100.000000E-09 
+        LINT   23.800990E-09    3.444679E-09 
+        WINT   18.849980E-09   19.055530E-09 
+          WW                 -122.182000E-18 
+         WWN                    1.127        
+         DLC   23.800990E-09    3.444679E-09 
+         DWC   18.849980E-09   19.055530E-09 
+          CF   94.146110E-12   94.146110E-12 
+        NOIA    9.900001E+18  100.000000E+18 
+        NOIB    2.400000E+03   50.000000E+03 
+        NOIC    1.400000E-12   -1.400000E-12 
+        LAGS                    -.10925      
+       LKETA    -.01191        -9.947060E-03 
+       WKETA   -9.458998E-03   -4.420085E-03 
+       PVTH0    3.382690E-03   -1.524806E-03 
+       PRDSW   29.85157       -30.10857      
+         PK2    3.552957E-03 -250.575300E-06 
+         VTM     .025864         .025864     
+       PBSWG     .856472         .99         
+       MJSWG     .342834         .313489     
+       CJSWG  310.015500E-12  361.355000E-12 
+
+
+WARNING -- Mosfet M_M2, model MbreakpD: Pd = 0 is less than W
+WARNING -- Mosfet M_M2, model MbreakpD: Ps = 0 is less than W
+WARNING -- Mosfet M_M1, model MbreaknD: Pd = 0 is less than W
+WARNING -- Mosfet M_M1, model MbreaknD: Ps = 0 is less than W
+WARNING -- Mosfet M_M3, model MbreaknD: Pd = 0 is less than W
+WARNING -- Mosfet M_M3, model MbreaknD: Ps = 0 is less than W
+WARNING -- Mosfet M_M4, model MbreakpD: Pd = 0 is less than W
+WARNING -- Mosfet M_M4, model MbreakpD: Ps = 0 is less than W
+**** 01/18/05 16:31:35 ************** PSpice Lite (Mar 2000) *****************
+
+ ** Profile: "SCHEMATIC1-SimINV"  [ P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv-schematic1-siminv.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00427)    2.5000 (N00472)    2.5000 (N00546)    0.0000 (N03374)     .5695     
+
+(N03426)    0.0000 
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1         0.000E+00
+    V_V3         0.000E+00
+    V_V2        -1.255E-11
+
+    TOTAL POWER DISSIPATION   3.14E-11  WATTS
+
+
+
+          JOB CONCLUDED
+
+          TOTAL JOB TIME            1.39
+

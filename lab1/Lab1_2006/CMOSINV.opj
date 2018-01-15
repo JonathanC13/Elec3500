@@ -1,0 +1,67 @@
+(ExpressProject "CMOSINV"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (Sort User)
+      (File ".\cmosinv.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\cmosinv.olb")))
+    (NoModify)
+    (File ".\cmosinv.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\cmosinv-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\cmosinv-schematic1-siminv.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\cmosinv-schematic1-siminv.sim"
+        (DisplayName "SCHEMATIC1-SimINV")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\cmosinv.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\cmosinv.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv.dsn")
+      (Path "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "P:\CourseNotes\ELEC3500\Lab1_2005\cmosinv.dsn" "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 18 306 13 563"))
+      (Tab 0))
+    (Doc
+      (Type "COrSchematicDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 84 943 36 569")
+        (Scroll "0 54")
+        (Zoom "100")
+        (Occurrence "/"))
+      (Path "P:\COURSENOTES\ELEC3500\LAB1_2005\CMOSINV.DSN")
+      (Schematic "SCHEMATIC1")
+      (Page "PAGE1"))))

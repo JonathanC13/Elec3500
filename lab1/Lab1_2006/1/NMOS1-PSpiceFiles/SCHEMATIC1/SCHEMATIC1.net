@@ -1,0 +1,9 @@
+* source NMOS1
+V_V1         N00546 0  
++PULSE 0 2.5 1ns 200ps 200ps 20ns 60ns
+V_V2         N00325 0 2.5Vdc
+M_M1         N00380 N00546 0 0 MbreaknD  
++ L=1U  
++ W=1U         
+R_R1         N00380 N00325  10k  
+C_C1         0 N00380  0.1PF  

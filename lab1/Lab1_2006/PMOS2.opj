@@ -1,0 +1,57 @@
+(ExpressProject "PMOS2"
+  (ProjectVersion "19981106")
+  (ProjectType "Analog or A/D Mixed Mode")
+  (Folder "Design Resources"
+    (Folder "Library"
+      (Sort User)
+      (File ".\pmos2.olb"
+        (Type "Schematic Library")
+        (DisplayName ".\pmos2.olb")))
+    (NoModify)
+    (File ".\pmos2.dsn"
+      (Type "Schematic Design"))
+    (BuildFileAddedOrDeleted "x")
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
+  (Folder "Outputs"
+    (File ".\pmos2-schematic1.net"
+      (Type "Report")))
+  (Folder "PSpice Resources"
+    (Folder "Simulation Profiles"
+      (ActiveProfile ".\pmos2-schematic1-simpmos2.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\pmos2-schematic1-simpmos2.sim"
+        (DisplayName "SCHEMATIC1-SimPMOS2")
+        (Type "PSpice Profile")))
+    (Folder "Model Libraries"
+      (Sort User)
+      (File ".\pmos2.lib"
+        (Type "PSpiceLibrary")
+        (DisplayName ".\pmos2.lib")))
+    (Folder "Stimulus Files"
+      (Sort User))
+    (Folder "Include Files"
+      (Sort User)))
+  (DefaultLibraryBrowseDirectory "library\PSpice")
+  (PartMRUSelector
+    (MbreakP4D
+      (FullPartName "MbreakP4D.Normal")
+      (LibraryName
+         "C:\PROGRAM FILES\ORCADLITE\CAPTURE\LIBRARY\PSPICE\BREAKOUT.OLB")
+      (DeviceIndex "0")))
+  (GlobalState
+    (FileView
+      (Path "Design Resources")
+      (Path "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\pmos2.dsn")
+      (Path "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\pmos2.dsn"
+         "SCHEMATIC1")
+      (Path "Design Resources" "Library")
+      (Path "Outputs")
+      (Select "Design Resources" "P:\CourseNotes\ELEC3500\Lab1_2005\pmos2.dsn"
+         "SCHEMATIC1" "PAGE1"))
+    (HierarchyView)
+    (Doc
+      (Type "COrCapturePMDoc")
+      (Frame
+        (Placement "44 0 1 -1 -1 -1 -1 0 411 0 550"))
+      (Tab 0))))
